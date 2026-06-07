@@ -1,0 +1,125 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #0a0a0a;
+    color: #e5e5e5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder {
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+}
+
+.sidebarSection {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+}
+
+.sidebarNewBtn {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 2px;
+    transition: color 0.15s;
+}
+
+.sidebarNewBtn:hover {
+    color: #3b82f6;
+}
+
+.sidebarItem {
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #aaa;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    margin: 1px 6px;
+    transition: background 0.12s, color 0.12s;
+}
+
+.sidebarItem:hover {
+    background: #1a1a1a;
+    color: #e5e5e5;
+}
+
+.sidebarItemActive {
+    background: #1a1a1a;
+    color: #e5e5e5;
+    border-left: 2px solid #3b82f6;
+    padding-left: 14px;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+    padding: 24px;
+}
+
+.projectCard {
+    padding: 14px 18px;
+    background: #111;
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.projectCard:hover {
+    background: #161616;
+    border-color: #3b82f6;
+}
+
+.newProjectBtn {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 8px 18px;
+    background: transparent;
+    border: 1px dashed #2a2a2a;
+    border-radius: 6px;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.newProjectBtn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
